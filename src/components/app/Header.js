@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import StreamCreate from "./streams/StreamCreate";
-import StreamDelete from "./streams/StreamDelete";
-import StreamEdit from "./streams/StreamEdit";
-import StreamList from "./streams/StreamList";
+import GoogleAuth from "./GoogleAuth";
 
 const Header = () => {
   return (
@@ -16,6 +13,9 @@ const Header = () => {
         <Link to="/streams/edit" className="item">
           Streams Edit
         </Link>
+      </div>
+      <div className="right menu">
+        <GoogleAuth></GoogleAuth>
       </div>
     </div>
   );
